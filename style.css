@@ -45,6 +45,9 @@ nav{
     border:1px solid rgba(255,255,255,.08);
     border-radius:18px;
     backdrop-filter:blur(12px);
+    position:sticky;
+    top:15px;
+    z-index:1000;
 }
 
 .logo{
@@ -228,4 +231,35 @@ footer{
 .faq-item h3{
     color:#00A8FF;
     margin-bottom:10px;
+}
+.why{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.why h2{
+    color:#00A8FF;
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    width:90%;
+    margin:auto;
+}
+
+.why-card{
+    background:#101827;
+    padding:30px;
+    border-radius:18px;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(0,168,255,.35);
 }
