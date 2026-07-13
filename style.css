@@ -445,3 +445,77 @@ to{
 transform:translate(-50%,-45%);
 }
 }
+#themeToggle{
+    background:transparent;
+    border:2px solid #00A8FF;
+    color:#00A8FF;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#themeToggle:hover{
+    background:#00A8FF;
+    color:white;
+}body.light{
+    background:#EAF4FF;
+    color:#111;
+}
+
+body.light .card,
+body.light .plan,
+body.light .faq-item,
+body.light .testimonial,
+body.light .why-card{
+    background:white;
+    color:#111;
+}.search-box{
+    margin-top:40px;
+}
+
+.search-box input{
+    width:320px;
+    max-width:90%;
+    padding:15px;
+    border-radius:12px;
+    border:none;
+    outline:none;
+    background:#101827;
+    color:white;
+    border:1px solid rgba(255,255,255,.1);
+}.updates{
+    width:90%;
+    max-width:900px;
+    margin:100px auto;
+}
+
+.update{
+    background:#101827;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    border-left:5px solid #00A8FF;
+}.newsletter{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.newsletter input{
+    padding:15px;
+    width:320px;
+    max-width:90%;
+    border:none;
+    border-radius:12px;
+    margin:15px;
+}
+
+.newsletter button{
+    padding:15px 30px;
+    background:#00A8FF;
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+}
