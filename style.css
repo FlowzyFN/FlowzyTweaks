@@ -296,3 +296,13 @@ footer{
     margin-top:10px;
     color:#B8C7D9;
 }
+#progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:4px;
+    width:0%;
+    background:#00A8FF;
+    box-shadow:0 0 20px #00A8FF;
+    z-index:9999;
+}
