@@ -1,9 +1,13 @@
-document.querySelectorAll(".card").forEach(card => {
-    card.addEventListener("mouseenter", () => {
-        card.style.transform = "translateY(-10px) scale(1.03)";
-    });
+const progress = document.getElementById("progress-bar");
 
-    card.addEventListener("mouseleave", () => {
-        card.style.transform = "translateY(0) scale(1)";
-    });
+window.addEventListener("scroll", () => {
+
+    const totalHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const progressWidth =
+        (window.scrollY / totalHeight) * 100;
+
+    progress.style.width = progressWidth + "%";
 });
