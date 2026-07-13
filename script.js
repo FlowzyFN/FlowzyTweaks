@@ -55,3 +55,29 @@ const themeToggle = document.getElementById("themeToggle");
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("light");
 });
+const recommendBtn = document.getElementById("recommendBtn");
+
+if (recommendBtn) {
+    recommendBtn.addEventListener("click", () => {
+
+        const gpu = document.getElementById("gpu").value;
+        const ram = document.getElementById("ram").value;
+        const result = document.getElementById("result");
+
+        if (!gpu || !ram) {
+            result.textContent = "Please answer both questions.";
+            return;
+        }
+
+        if (ram === "8 GB") {
+            result.textContent =
+                "We recommend starting with our Low-End PC Optimization Guide.";
+        } else if (ram === "16 GB") {
+            result.textContent =
+                "We recommend our Balanced Performance Guide.";
+        } else {
+            result.textContent =
+                "We recommend our High Performance Optimization Guide.";
+        }
+    });
+}
