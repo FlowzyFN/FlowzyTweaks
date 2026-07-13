@@ -519,3 +519,47 @@ body.light .why-card{
     border-radius:12px;
     cursor:pointer;
 }
+.optimizer{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.optimizer h2{
+    color:#00A8FF;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.optimizer select{
+    display:block;
+    margin:20px auto;
+    padding:15px;
+    width:300px;
+    max-width:90%;
+    border-radius:12px;
+    background:#101827;
+    color:white;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+#recommendBtn{
+    margin-top:20px;
+    padding:15px 35px;
+    border:none;
+    border-radius:12px;
+    background:#00A8FF;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#recommendBtn:hover{
+    box-shadow:0 0 20px #00A8FF;
+}
+
+#result{
+    margin-top:30px;
+    font-size:20px;
+    color:#00A8FF;
+    font-weight:600;
+}
