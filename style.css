@@ -199,9 +199,20 @@ nav a:hover{
 }
 
 footer{
-    padding:40px;
     text-align:center;
+    padding:60px 20px;
+    border-top:1px solid rgba(255,255,255,.08);
+    margin-top:80px;
+}
+
+footer h2{
+    color:#00A8FF;
+    margin-bottom:15px;
+}
+
+footer p{
     color:#9CA3AF;
+    margin:10px 0;
 }
 .faq{
     width:90%;
@@ -562,4 +573,86 @@ body.light .why-card{
     font-size:20px;
     color:#00A8FF;
     font-weight:600;
+}
+.contact{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    color:#00A8FF;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:40px;
+    color:#B8C7D9;
+}
+
+.contact form{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact input,
+.contact textarea{
+    background:#101827;
+    color:white;
+    border:1px solid rgba(255,255,255,.08);
+    padding:18px;
+    border-radius:12px;
+    outline:none;
+}
+
+.contact textarea{
+    min-height:150px;
+    resize:vertical;
+}
+
+.contact button{
+    background:#00A8FF;
+    color:white;
+    border:none;
+    padding:18px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.contact button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #00A8FF;
+}@media (max-width:768px){
+
+.hero h1{
+font-size:48px;
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.buttons{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.primary,
+.secondary{
+width:220px;
+text-align:center;
+}
+
 }
