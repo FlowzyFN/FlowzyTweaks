@@ -33,7 +33,9 @@ body::before{
         transform:translateY(-40px);
     }
 }
-
+html{
+scroll-behavior:smooth;
+}
 nav{
     width:90%;
     margin:25px auto;
@@ -366,4 +368,80 @@ footer{
     cursor:pointer;
     display:none;
     box-shadow:0 0 20px #00A8FF;
+}
+.testimonials{
+padding:100px 20px;
+text-align:center;
+}
+
+.testimonials h2{
+font-size:45px;
+color:#00A8FF;
+margin-bottom:50px;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+width:90%;
+margin:auto;
+}
+
+.testimonial{
+background:#101827;
+padding:30px;
+border-radius:18px;
+transition:.3s;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.testimonial:hover{
+transform:translateY(-8px);
+box-shadow:0 0 30px rgba(0,168,255,.35);
+}
+
+.testimonial span{
+display:block;
+margin-top:20px;
+color:#00A8FF;
+}.discord-btn{
+background:#00A8FF;
+padding:10px 20px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.discord-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00A8FF;
+}.hero{
+position:relative;
+overflow:hidden;
+}
+
+.hero-glow{
+position:absolute;
+width:500px;
+height:500px;
+background:#00A8FF;
+filter:blur(180px);
+opacity:.15;
+left:50%;
+top:40%;
+transform:translate(-50%,-50%);
+z-index:-1;
+animation:floatGlow 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow{
+from{
+transform:translate(-50%,-50%);
+}
+to{
+transform:translate(-50%,-45%);
+}
 }
