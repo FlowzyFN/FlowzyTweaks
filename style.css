@@ -306,3 +306,17 @@ footer{
     box-shadow:0 0 20px #00A8FF;
     z-index:9999;
 }
+.cta{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.cta h2{
+    font-size:50px;
+    color:#00A8FF;
+}
+
+.cta p{
+    margin:20px 0 40px;
+    color:#C7D2FE;
+}
